@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:scrollbars="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_600sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_50sdp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/no_post_black"
+        android:id="@+id/no_post_black"
+        android:layout_marginTop="@dimen/_5sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_25sdp"
+        android:text="Profile"
+        android:layout_below="@id/no_post_black"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textview_profile_nopost"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When you share photos and videos,\nthey'll appear on your profile"
+        android:gravity="center"
+        android:layout_below="@id/textview_profile_nopost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/textview_nopost_comment"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="Share your first photo or video"
+        android:layout_below="@id/textview_nopost_comment"
+        android:gravity="center"
+        android:textColor="#1A707A"
+        android:id="@+id/textview_nopost_share"/>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

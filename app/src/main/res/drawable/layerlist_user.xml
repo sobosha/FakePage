@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="oval">
+        <size android:height="@dimen/_50sdp" android:width="@dimen/_50sdp"/>
+        <solid android:color="#bfbfbf"/>
+    </shape>
+</item>
+    <item android:drawable="@drawable/ic_fi_rr_user" android:top="@dimen/_15sdp" android:right="@dimen/_15sdp" android:left="@dimen/_15sdp" android:bottom="@dimen/_15sdp">
+
+    </item>
+</layer-list>

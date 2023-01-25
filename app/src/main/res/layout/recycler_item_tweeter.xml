@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/_400sdp"
+    android:padding="@dimen/_5sdp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/post1"
+
+        android:id="@+id/recycler_image_tweet"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/recycler_image_tweet"
+        android:layout_marginLeft="@dimen/_5sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:text="Diaco"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:id="@+id/name_tweets"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/id_tweets"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/name_tweets"
+            android:gravity="center_vertical"
+            android:text="\@Diaco093893"
+            android:textColor="#707070"
+            android:textSize="@dimen/_11sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:textSize="@dimen/_11sdp"
+            android:text=".1h"
+            android:layout_toRightOf="@id/id_tweets"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:textColor="#707070"
+            android:id="@+id/hour_tweets"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/_200sdp"
+            android:layout_below="@id/id_tweets"
+            android:ellipsize="end"
+            android:text="Diaco is a programing company and other Comany are available in this moment tghether and why?"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/tweets_body"
+            android:textColor="#707070"/>
+        <com.diaco.fakepage.Main.Customview_multiImage
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/tweets_body"
+            android:id="@+id/image_multi_tweets"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/image_multi_tweets"
+            android:weightSum="8"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_30sdp"
+                                    android:src="@drawable/comment_tweeter"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+
+                android:src="@drawable/retwit"
+
+                android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/heart_tweeter"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/twiter_share"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/tweets_activity"
+                    android:layout_alignParentBottom="true"
+                    android:rotation="-90"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

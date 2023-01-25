@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="multipleImageView">
+        <attr name="numberImage" format="integer"/>
+        <attr name="imageOne" format="reference"/>
+        <attr name="imagetwo" format="reference"/>
+        <attr name="imagethree" format="reference"/>
+        <attr name="imagefour" format="reference"/>
+    </declare-styleable>
+</resources>

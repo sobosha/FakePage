@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33333232">
+    <RelativeLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_warning">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/plus_highlights_white"
+            android:id="@+id/circleimage_add_highlights"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/circleimage_add_highlights"
+            android:text="نام هایلایت"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/temp_1"/>
+        <EditText
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/temp_1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edittext_highlights_name_add"
+            android:textSize="@dimen/_13sdp"/>
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="اضافه کردن"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/shape_editprofile"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/btn_add_highlight"/>
+    </RelativeLayout>
+
+</RelativeLayout>

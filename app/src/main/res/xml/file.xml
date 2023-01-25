@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="my_images"
+        path="Android/data/com.diaco.fakepage/files" />//Don't forget to add package name here i.e. com.android.example
+</paths>
